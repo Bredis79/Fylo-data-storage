@@ -1,7 +1,7 @@
 :root {
     --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
     --Pale-Blue: hsl(243, 100%, 93%);
-    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Grayish-Blue: rgb(193, 200, 233);
     --Dark-Blue: hsl(228, 56%, 26%);
     --Very-Dark-Blue: hsl(229, 57%, 11%);
 }
@@ -109,7 +109,7 @@ aside {
     align-items: center;
     position: relative;
     right: -330px;
-    bottom: 313px;
+    bottom: 295px;
 }
 
 aside span {
@@ -142,7 +142,7 @@ aside span {
 }
 
 .axis {
-    width: 73.5%;
+    width: 0;
     height: 14px;
     background-image: linear-gradient(to right,  hsl(6, 100%, 80%), hsl(335, 100%, 65%));
     border-radius: 20px;
@@ -151,7 +151,12 @@ aside span {
     display: flex;
     justify-content: end;
     align-items: center;
+
+    transition: 3s;
+    transition-property: width;
 }
+
+
 
 .circle {
     width: 10px;
@@ -172,8 +177,45 @@ aside span {
     font-size: 0.8rem;
 }
 
+ul > li:hover {
+    background-color: rgb(9, 9, 61);
+}
 
+.icon-document {
+    background-image: url(../images/icon-document.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
 
+.icon-document:hover {
+    background-image: url(../images/icon-document.hover.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.icon-folder {
+    background-image: url(../images/icon-folder.svg);
+    background-repeat: no-repeat;
+    background-position: 50%
+}
+
+.icon-folder:hover {
+    background-image: url(../images/icon-folder.hover.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.icon-upload {
+    background-image: url(../images/icon-upload.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.icon-upload:hover {
+    background-image: url(../images/icon-upload.hover.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
 
 .attribution { font-size: 11px; text-align: center; color: white;}
 .attribution a { color: hsl(228, 45%, 44%); }

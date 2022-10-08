@@ -1,23 +1,97 @@
 @media (max-width: 920px) {
     body {
-        background: url(../images/bg-mobile.png) right 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
-       
+        width: 100%;
+        max-width: 920px;
+        padding: 0 20px;
     }
 
     main {
         flex-direction: column;
+        width: 100%;
         max-width: 700px;
+
+        display: flex;
+        align-items: center;
     }
 
     .firstBlock {
         width: 100%;
         max-width: 90%;
+        min-height: 170px;
     }
 
     .secondBlock {
         width: 100%;
         max-width: 90%;
+        height: 170px;
     }
+
+    aside {
+        right: 0;
+        bottom: -10px;
+        border-radius: 10px;
+    }
+
+    .triangel {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        background: url(../images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 375px;
+        max-height: 667px;
+    }
+
+    main {
+        height: 100%;
+        max-height: 667px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+    .firstBlock {
+        width: 325px;
+        height: 200px;
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+
+    .secondBlock {
+        width: 325px;
+        height: 100%;
+        max-height: 150px;
+        padding: 0 30px;
+        margin: 0;
+
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .secondBlock p {
+        margin-top: 27px;
+        margin-bottom: 17px;
+        text-align: center;
+    }
+
+    .wrapAxis {
+        margin-top: -70px;
+    }
+
+    .minMax p {
+        margin-top: -64px;
+    }
+
+    aside {
+        right: 0;
+        bottom: 115px;
+        border-radius: 10px;
+        height: 85px;
+    }    
 }
