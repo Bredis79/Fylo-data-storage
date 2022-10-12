@@ -4,7 +4,7 @@ $(function(){
 
 
 // this piece of code i found on stackoverflow    
-// Animate the element's value from 0% to 110%:
+// Animate the element's value from 0% to value you will set:
 $({someValue: 0}).animate({someValue: 185}, {
 	duration: 3000,
 	easing:'swing', // can be anything
